@@ -33,7 +33,7 @@ function handlerClick(evt) {
     if (evt.target.nodeName !== "IMG") {
         return;
     }
-    const instance = basicLightbox.create(`
+    const instance = new SimpleLightbox(`
     <img src="${evt.target.dataset.source}" width="800" height="600">`);
     instance.show();
     elementsList.addEventListener('keydown', (evt) => {
