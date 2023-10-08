@@ -8,10 +8,10 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 console.log(galleryItems);
 const elementsList = document.querySelector('.gallery');
 
-const imagesEl = elementsList(galleryItems);
+const imagesEl = createGalleryImg(galleryItems);
 elementsList.insertAdjacentHTML('beforeend', imagesEl);
 
-function elementsList(item) {
+function createGalleryImg(item) {
   return galleryItems
     .map(({ preview, original, description }) => {
       return `<ul class="gallery">
