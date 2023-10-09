@@ -28,6 +28,8 @@ function onFormSubmit(evt) {
     formData.email = links.email.value;
     formData.message = links.message.value;
     evt.currentTarget.reset();
+    
+    console.log(formData);
 }
  function onFormInput(evt) {
    formData[evt.target.name] = evt.target.value;
