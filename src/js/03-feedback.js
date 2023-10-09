@@ -42,7 +42,6 @@ function processingForm() {
         formData = objectValues;
         links.email.value = objectValues.email || '';
         links.message.value = objectValues.message || '';
-        formData = objectValues.email || '';
-        formData = objectValues.message || '';
+    
     }
 }
